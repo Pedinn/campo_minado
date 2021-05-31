@@ -23,4 +23,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  Welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
 });
