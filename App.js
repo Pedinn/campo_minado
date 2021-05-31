@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import params from './src/params'
 import Field from './src/components/Field'
 
+
 export default function App() {
   return (
     <View style={styles.container}>
