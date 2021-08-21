@@ -10,7 +10,7 @@ const params = {
         const width = Dimensions.get('window') .width
         return Math.floor(width / this.blockSize)
     },
-    getRowAmount() {
+    getRowsAmount() {
         const totalHeight = Dimensions.get('window').height // totalHeight = altura total 
         const borderHeight = totalHeight * (1 - this.headerRatio) // 85% da altura total do dispositivo         borderHeight = altura do tabuleiro
         return Math.floor(borderHeight / this.blockSize) // AlturaDoTabuleiro / TamanhoDoBloco

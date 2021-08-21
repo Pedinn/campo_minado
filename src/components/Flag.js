@@ -1,18 +1,22 @@
 import React from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
 export default props => {
     return (
-        <Text style={styles.container}>
-            <View style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]} /> {/* caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagpoleBigger */}
-            <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} />         {/* caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagBigger */}
-            <View style={[styles.base1, props.bigger ? styles.base1Bigger : null]} />       {/* caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagbase1Bigger */}
-            <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />       {/* caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagbase2Bigger */}
-        </Text>
+        <View style={styles.container}>
+           <View style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]} />
+           <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} /> 
+           <View style={[styles.base1, props.bigger ? styles.base1Bigger : null]} />    
+           <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />  
+        </View>
+    // caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagpoleBigger
+    // caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagBigger
+    // caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagbase1Bigger
+    // caso a propriedade bigger esteja presente, ele vai adicionar o styles.flagbase2Bigger
     )
 }
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
     container: {
         marginTop: 2,
     },
@@ -25,7 +29,7 @@ const styles = StyleSheet.create ({
     },
     flag: { // bandeira
         position: 'absolute',
-        height: 2,
+        height: 5,
         width: 6,
         backgroundColor: '#F22',
         marginLeft: 3,
@@ -65,7 +69,7 @@ const styles = StyleSheet.create ({
     base2Bigger: {
         height: 4,
         width: 20,
-        marginTop: 8,
-        marginLeft: 24,
-    },
+        marginLeft: 8,
+        marginTop: 24
+    }
 })

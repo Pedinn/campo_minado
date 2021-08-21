@@ -1,22 +1,22 @@
 import React from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
 export default props => {
     return (
-        <Text style={styles.container}>
-            <View style={styles.coreMine} /> {/* nucleo da mina */}
-            <View style={styles.line} /> {/* linhas */}
+        <View style={styles.container}>
+            <View style={styles.coreMine} /> 
+            <View style={styles.line} />
             <View style={[styles.line, { transform: [{ rotate: '45deg' }] }]} />
             <View style={[styles.line, { transform: [{ rotate: '90deg' }] }]} />
             <View style={[styles.line, { transform: [{ rotate: '135deg' }] }]} />
-        </Text>
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     coreMine: {
         height: 10,
